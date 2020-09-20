@@ -36,7 +36,7 @@ char* HalGetProductType(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_PRODUCT_TYPE) + 1, OHOS_PRODUCT_TYPE) != 0) {
+    if (strcpy_s(value, strlen(OHOS_PRODUCT_TYPE) + 1, OHOS_PRODUCT_TYPE) != EOK) {
         free(value);
         return NULL;
     }
@@ -49,7 +49,7 @@ char* HalGetManufacture(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_MANUFACTURE) + 1, OHOS_MANUFACTURE) != 0) {
+    if (strcpy_s(value, strlen(OHOS_MANUFACTURE) + 1, OHOS_MANUFACTURE) != EOK) {
         free(value);
         return NULL;
     }
@@ -62,7 +62,7 @@ char* HalGetBrand(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_BRAND) + 1, OHOS_BRAND) != 0) {
+    if (strcpy_s(value, strlen(OHOS_BRAND) + 1, OHOS_BRAND) != EOK) {
         free(value);
         return NULL;
     }
@@ -75,7 +75,7 @@ char* HalGetMarketName(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_MARKET_NAME) + 1, OHOS_MARKET_NAME) != 0) {
+    if (strcpy_s(value, strlen(OHOS_MARKET_NAME) + 1, OHOS_MARKET_NAME) != EOK) {
         free(value);
         return NULL;
     }
@@ -88,7 +88,7 @@ char* HalGetProductSeries(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_PRODUCT_SERIES) + 1, OHOS_PRODUCT_SERIES) != 0) {
+    if (strcpy_s(value, strlen(OHOS_PRODUCT_SERIES) + 1, OHOS_PRODUCT_SERIES) != EOK) {
         free(value);
         return NULL;
     }
@@ -101,7 +101,7 @@ char* HalGetProductModel(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_PRODUCT_MODEL) + 1, OHOS_PRODUCT_MODEL) != 0) {
+    if (strcpy_s(value, strlen(OHOS_PRODUCT_MODEL) + 1, OHOS_PRODUCT_MODEL) != EOK) {
         free(value);
         return NULL;
     }
@@ -114,7 +114,7 @@ char* HalGetSoftwareModel(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_SOFTWARE_MODEL) + 1, OHOS_SOFTWARE_MODEL) != 0) {
+    if (strcpy_s(value, strlen(OHOS_SOFTWARE_MODEL) + 1, OHOS_SOFTWARE_MODEL) != EOK) {
         free(value);
         return NULL;
     }
@@ -127,7 +127,7 @@ char* HalGetHardwareModel(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_HARDWARE_MODEL) + 1, OHOS_HARDWARE_MODEL) != 0) {
+    if (strcpy_s(value, strlen(OHOS_HARDWARE_MODEL) + 1, OHOS_HARDWARE_MODEL) != EOK) {
         free(value);
         return NULL;
     }
@@ -140,7 +140,7 @@ char* HalGetHardwareProfile(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_HARDWARE_PROFILE) + 1, OHOS_HARDWARE_PROFILE) != 0) {
+    if (strcpy_s(value, strlen(OHOS_HARDWARE_PROFILE) + 1, OHOS_HARDWARE_PROFILE) != EOK) {
         free(value);
         return NULL;
     }
@@ -153,7 +153,7 @@ char* HalGetSerial(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_SERIAL) + 1, OHOS_SERIAL) != 0) {
+    if (strcpy_s(value, strlen(OHOS_SERIAL) + 1, OHOS_SERIAL) != EOK) {
         free(value);
         return NULL;
     }
@@ -166,7 +166,7 @@ char* HalGetBootloaderVersion(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_BOOTLOADER_VERSION) + 1, OHOS_BOOTLOADER_VERSION) != 0) {
+    if (strcpy_s(value, strlen(OHOS_BOOTLOADER_VERSION) + 1, OHOS_BOOTLOADER_VERSION) != EOK) {
         free(value);
         return NULL;
     }
@@ -179,7 +179,7 @@ char* HalGetSecurityPatchTag(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_SECURITY_PATCH_TAG) + 1, OHOS_SECURITY_PATCH_TAG) != 0) {
+    if (strcpy_s(value, strlen(OHOS_SECURITY_PATCH_TAG) + 1, OHOS_SECURITY_PATCH_TAG) != EOK) {
         free(value);
         return NULL;
     }
@@ -192,7 +192,7 @@ char* HalGetAbiList(void)
     if (value == NULL) {
         return NULL;
     }
-    if (strcpy_s(value, strlen(OHOS_ABI_LIST) + 1, OHOS_ABI_LIST) != 0) {
+    if (strcpy_s(value, strlen(OHOS_ABI_LIST) + 1, OHOS_ABI_LIST) != EOK) {
         free(value);
         return NULL;
     }
